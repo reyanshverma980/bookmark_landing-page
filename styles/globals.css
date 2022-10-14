@@ -1,26 +1,60 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.container-bookmark {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+.hero-img::after {
+  content: "";
+  background-color: hsl(231, 69%, 60%);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-25%);
+  width: 75%;
+  height: 70%;
+  z-index: -1;
+  border-bottom-left-radius: 45%;
+}
+
+.feature-img::before {
+  content: "";
+  background-color: hsl(231, 69%, 60%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-28%);
+  width: 40%;
+  height: 65%;
+  z-index: -1;
+  border-bottom-right-radius: 35%;
+}
+
+.feature-border::after {
+  content: "";
+  background-color: hsl(0, 94%, 66%);
+  position: absolute;
+  width: 16.5rem;
+  left: 50%;
+  height: 4px;
+  bottom: -80%;
+  transform: translateX(-50%);
+}
+
+.icon:hover {
+  filter: invert(38%) sepia(77%) saturate(813%) hue-rotate(320deg)
+    brightness(105%) contrast(96%);
 }
