@@ -33,24 +33,30 @@ const Main = () => {
           <li
             onClick={setFeature1}
             className={`${
-              featureNum === 1 ? "feature-border text-very-dark-blue" : ""
-            } relative hover:text-soft-red`}
+              featureNum === 1
+                ? "feature-border text-very-dark-blue"
+                : "hover:text-soft-red"
+            } relative`}
           >
             Simple Bookmarking
           </li>
           <li
             onClick={setFeature2}
             className={`${
-              featureNum === 2 ? "feature-border text-very-dark-blue" : ""
-            } relative hover:text-soft-red`}
+              featureNum === 2
+                ? "feature-border text-very-dark-blue"
+                : "hover:text-soft-red"
+            } relative `}
           >
             Speedy Searching
           </li>
           <li
             onClick={setFeature3}
             className={`${
-              featureNum === 3 ? "feature-border text-very-dark-blue" : ""
-            } relative hover:text-soft-red`}
+              featureNum === 3
+                ? "feature-border text-very-dark-blue"
+                : "hover:text-soft-red"
+            } relative `}
           >
             Easy Sharing
           </li>

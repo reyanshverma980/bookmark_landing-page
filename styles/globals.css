@@ -58,3 +58,8 @@
   filter: invert(38%) sepia(77%) saturate(813%) hue-rotate(320deg)
     brightness(105%) contrast(96%);
 }
+
+.arrow {
+  filter: invert(38%) sepia(77%) saturate(813%) hue-rotate(320deg)
+    brightness(105%) contrast(96%);
+}
