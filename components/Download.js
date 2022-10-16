@@ -8,8 +8,8 @@ const Download = () => {
           Download the extension
         </h2>
         <p className="text-lg text-grayish-blue mt-5">
-          We’ve got more browsers in the pipeline. Please do let us know if
-          you’ve got a favourite you’d like us to prioritize.
+          We&apos;ve got more browsers in the pipeline. Please do let us know if
+          you&apos;ve got a favourite you&apos;d like us to prioritize.
         </p>
       </div>
 

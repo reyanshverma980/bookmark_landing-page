@@ -9,7 +9,7 @@ const Footer = () => {
             35,000+ already joined
           </span>
           <h2 className="md:text-4xl text-3xl font-medium text-white">
-            Stay up-to-date with what we’re doing
+            Stay up-to-date with what we&apos;re doing
           </h2>
           <form className=" flex sm:flex-row flex-col  sm:items-center gap-x-6 justify-center sm:mt-8 mt-12 mb-20">
             <div className=" relative flex flex-col flex-grow mb-8 sm:mb-0">
@@ -19,7 +19,7 @@ const Footer = () => {
                 className=" peer min-w-fit invalid:outline invalid:outline-2 invalid:outline-soft-red outline-0 py-3 px-6 text-lg rounded-t"
               />
               <p className=" absolute outline outline-2 outline-soft-red invisible text-left py-1 rounded-b-md px-6 w-full -bottom-6  bg-soft-red peer-invalid:visible text-white text-xs">
-                Whoops, Make sure it's an email
+                Whoops, Make sure it&apos;s an email
               </p>
               <img
                 src="/images/icon-error.svg"

@@ -46,8 +46,8 @@ const FAQ = () => {
           Frequently Asked Questions
         </h2>
         <p className="text-lg text-grayish-blue mt-5">
-          Here are some of our FAQs. If you have any other questions you’d like
-          answered please feel free to email us.
+          Here are some of our FAQs. If you have any other questions you&apos;d
+          like answered please feel free to email us.
         </p>
       </div>
       <div className="md:w-2/5 w-10/12 mx-auto my-14">
