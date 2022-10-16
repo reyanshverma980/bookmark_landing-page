@@ -41,17 +41,23 @@ const FAQ = () => {
 
   return (
     <section className="flex flex-col items-center mt-48">
-      <div className="text-center w-2/5 mx-auto">
-        <h2 className="text-4xl font-medium">Frequently Asked Questions</h2>
+      <div className="text-center md:w-2/5 w-10/12 mx-auto">
+        <h2 className="md:text-4xl text-3xl font-medium">
+          Frequently Asked Questions
+        </h2>
         <p className="text-lg text-grayish-blue mt-5">
           Here are some of our FAQs. If you have any other questions you’d like
           answered please feel free to email us.
         </p>
       </div>
-      <div className="w-2/5 mx-auto my-14">
+      <div className="md:w-2/5 w-10/12 mx-auto my-14">
         {/* first question */}
         <div className="flex flex-col border-y py-5">
-          <div className="flex items-center justify-between hover:text-soft-red">
+          <div
+            className={`flex items-center justify-between ${
+              para === 1 ? "" : "hover:text-soft-red"
+            }`}
+          >
             <span className=" text-xl">What is Bookmark?</span>
             <img
               src="/images/icon-arrow.svg"
@@ -70,7 +76,11 @@ const FAQ = () => {
         </div>
         {/* second question */}
         <div className="flex flex-col border-b py-5">
-          <div className="flex items-center justify-between hover:text-soft-red">
+          <div
+            className={`flex items-center justify-between ${
+              para === 2 ? "" : "hover:text-soft-red"
+            }`}
+          >
             <span className=" text-xl">How can I request a new browser?</span>
             <img
               src="/images/icon-arrow.svg"
@@ -92,7 +102,11 @@ const FAQ = () => {
         </div>
         {/* third question */}
         <div className="flex flex-col border-b py-5">
-          <div className="flex items-center justify-between hover:text-soft-red">
+          <div
+            className={`flex items-center justify-between ${
+              para === 3 ? "" : "hover:text-soft-red"
+            }`}
+          >
             <span className=" text-xl">Is there a mobile app?</span>
             <img
               src="/images/icon-arrow.svg"
@@ -112,7 +126,11 @@ const FAQ = () => {
         </div>
         {/* fourth question */}
         <div className="flex flex-col border-b py-5">
-          <div className="flex items-center justify-between hover:text-soft-red">
+          <div
+            className={`flex items-center justify-between ${
+              para === 4 ? "" : "hover:text-soft-red"
+            }`}
+          >
             <span className=" text-xl">
               What about other Chromium browsers?
             </span>

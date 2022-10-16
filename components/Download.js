@@ -3,16 +3,18 @@ import React from "react";
 const Download = () => {
   return (
     <section className="mt-32">
-      <div className="text-center w-2/5 mx-auto">
-        <h2 className="text-4xl font-medium">Download the extension</h2>
+      <div className="text-center lg:w-2/5 w-10/12 mx-auto">
+        <h2 className="lg:text-4xl text-3xl font-medium">
+          Download the extension
+        </h2>
         <p className="text-lg text-grayish-blue mt-5">
           We’ve got more browsers in the pipeline. Please do let us know if
           you’ve got a favourite you’d like us to prioritize.
         </p>
       </div>
 
-      <div className=" flex justify-center mt-10 gap-x-10">
-        <div className=" flex  flex-col text-center shadow-lg rounded-xl">
+      <div className=" flex md:flex-row flex-col  justify-center items-center mt-10 gap-x-10">
+        <div className=" flex  flex-col text-center shadow-lg rounded-xl mb-4 md:mb-0">
           <img
             src="/images/logo-chrome.svg"
             alt="Chrome logo"
@@ -30,7 +32,7 @@ const Download = () => {
           </button>
         </div>
 
-        <div className=" flex  flex-col text-center shadow-lg rounded-xl translate-y-7">
+        <div className=" flex  flex-col text-center shadow-lg rounded-xl translate-y-7 mb-4 md:mb-0">
           <img
             src="/images/logo-firefox.svg"
             alt="Chrome logo"
@@ -48,7 +50,7 @@ const Download = () => {
           </button>
         </div>
 
-        <div className=" flex  flex-col text-center shadow-lg rounded-xl translate-y-14">
+        <div className=" flex  flex-col text-center shadow-lg rounded-xl translate-y-14 mb-4 md:mb-0">
           <img
             src="/images/logo-opera.svg"
             alt="Chrome logo"

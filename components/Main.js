@@ -19,8 +19,8 @@ const Main = () => {
 
   return (
     <main className="mb-10">
-      <div className=" text-center w-2/5 mx-auto">
-        <h2 className=" text-4xl font-medium">Features</h2>
+      <div className=" text-center lg:w-2/5 w-10/12 mx-auto">
+        <h2 className=" lg:text-4xl text-3xl font-medium">Features</h2>
         <p className=" text-lg text-grayish-blue mt-5">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
@@ -28,15 +28,15 @@ const Main = () => {
         </p>
       </div>
 
-      <div className=" mt-16 w-1/2 mx-auto border-b-2 pb-5">
-        <ul className="flex w-full text-lg text-grayish-blue items-center justify-around  cursor-pointer">
+      <div className=" mt-16 lg:w-1/2 w-10/12 mx-auto lg:border-b-2 pb-5">
+        <ul className="flex lg:flex-row flex-col w-full text-lg  text-grayish-blue items-center justify-around  cursor-pointer">
           <li
             onClick={setFeature1}
             className={`${
               featureNum === 1
                 ? "feature-border text-very-dark-blue"
                 : "hover:text-soft-red"
-            } relative`}
+            } relative py-2 border-y-2 w-full lg:w-fit lg:py-0 lg:border-y-0 text-center`}
           >
             Simple Bookmarking
           </li>
@@ -46,7 +46,7 @@ const Main = () => {
               featureNum === 2
                 ? "feature-border text-very-dark-blue"
                 : "hover:text-soft-red"
-            } relative `}
+            } relative py-2 border-b-2 w-full lg:w-fit lg:py-0 lg:border-y-0 text-center `}
           >
             Speedy Searching
           </li>
@@ -56,7 +56,7 @@ const Main = () => {
               featureNum === 3
                 ? "feature-border text-very-dark-blue"
                 : "hover:text-soft-red"
-            } relative `}
+            } relative py-2 border-b-2 w-full lg:w-fit lg:py-0 lg:border-y-0 text-center `}
           >
             Easy Sharing
           </li>
